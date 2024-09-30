@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="RPS.css">
+</head>
+<body>
+    <div class="background">
+        <h1 id="title" class="text">ROCK PAPER SCISSORS!</h1>
+        <h3 class="text">Please Choose an Option</h3>
+        <div class="icons">
+            <button class="rock" onclick="choiceRock()"><img src="https://cdn4.iconfinder.com/data/icons/small-v22/512/closed_fist_hand_holding_punch-512.png" alt=""></button>
+            <button class="paper" onclick="choicePaper()"><img src="https://th.bing.com/th/id/R.e5551b0d6f97d03c73fa4427bdbf4b86?rik=u30O32f6OQU%2bgw&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2ficons8%2fios7%2f512%2fHands-Hand-icon.png&ehk=0JzIMDVopBPt%2b1xFYhxolfivcCjFWBRwyk7dp2LAfpo%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
+            <button class="scissor" onclick="choiceScissor()"><img src="https://cdn2.iconfinder.com/data/icons/touch-gestures-10/24/Peace-512.png" alt=""></button>
+        </div>
+        <div class="results">
+            <h2 id="user" class="text">Your Choice: </h2>
+            <h2 id="computer" class="text">Computer's Choice: </h2>
+        </div>
+        <div class="score">
+            <h2 id="score" class="text">Your Score: 0</h2>
+            <h2 id="compScore" class="text"> Computer's Score: 0</h2>
+        </div>
+        <h2 id="tie" class="text">Ties: 0</h2>
+        <button id="reset" onclick="reset()">RESET</button>
+    </div>
+    <script src="RPS.js"></script>
+</body>
+</html>
